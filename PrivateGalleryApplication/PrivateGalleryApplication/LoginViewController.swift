@@ -10,6 +10,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    private let PasswordButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Change Password", for: .normal)
+        button.backgroundColor = .red
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 12
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
+        return button
+    }()
+    
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.clipsToBounds = true
@@ -60,6 +71,9 @@ class LoginViewController: UIViewController {
                               for: .touchUpInside)
         
         passwordField.delegate = self
+        PasswordButton.addTarget(self,
+                                 action: #selector(PasswordButtonTapped),
+                                 for: .touchUpInside)
         
         
         // Add subviews
@@ -67,6 +81,7 @@ class LoginViewController: UIViewController {
         scrollView.addSubview(imageView)
         scrollView.addSubview(passwordField)
         scrollView.addSubview(loginButton)
+        scrollView.addSubview(PasswordButton)
     }
     
     override func viewDidLayoutSubviews() {
@@ -87,6 +102,15 @@ class LoginViewController: UIViewController {
                                    y: passwordField.bottom+10,
                                    width: scrollView.width-60,
                                    height: 52)
+        PasswordButton.frame = CGRect(x: 30,
+                                      y: loginButton.bottom+10,
+                                      width: scrollView.width-60,
+                                      height: 52)
+    }
+    
+    @objc private func PasswordButtonTapped(){
+        
+        self.present(PwChangeViewController(), animated: true, completion: nil)
     }
     
  

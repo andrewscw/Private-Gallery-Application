@@ -23,6 +23,7 @@
 		3206ED04261A869200D2542F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206ECFF261A869100D2542F /* LoginViewController.swift */; };
 		3206ED05261A869200D2542F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206ED00261A869200D2542F /* CollectionViewCell.swift */; };
 		3206ED06261A869200D2542F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206ED01261A869200D2542F /* RegisterViewController.swift */; };
+		321077F1261B1428002C71F4 /* PwChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321077F0261B1428002C71F4 /* PwChangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		3206ECFF261A869100D2542F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3206ED00261A869200D2542F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3206ED01261A869200D2542F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		321077F0261B1428002C71F4 /* PwChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				3206ECCA261A85E900D2542F /* ViewController.swift */,
 				3206ECFF261A869100D2542F /* LoginViewController.swift */,
 				3206ED01261A869200D2542F /* RegisterViewController.swift */,
+				321077F0261B1428002C71F4 /* PwChangeViewController.swift */,
 				3206ED00261A869200D2542F /* CollectionViewCell.swift */,
 				3206ECFE261A869100D2542F /* Images.swift */,
 				3206ECFD261A869100D2542F /* ImageVC.swift */,
@@ -300,6 +303,7 @@
 				3206ED03261A869200D2542F /* Images.swift in Sources */,
 				3206ECC7261A85E900D2542F /* AppDelegate.swift in Sources */,
 				3206ED02261A869200D2542F /* ImageVC.swift in Sources */,
+				321077F1261B1428002C71F4 /* PwChangeViewController.swift in Sources */,
 				3206ECC9261A85E900D2542F /* SceneDelegate.swift in Sources */,
 				3206ECFC261A866C00D2542F /* Extensions.swift in Sources */,
 			);
